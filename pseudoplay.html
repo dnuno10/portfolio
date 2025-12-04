@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoPlay - Daniel Nuno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="img/danielnuno.jpg" class="profile-img">
+        <div class="nav-title">
+            <h3>Daniel Nuno</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">← Back to Portfolio</a></li>
+    </ul>
+</nav>
+
+<section class="project-hero">
+    <div class="hero-layout">
+
+        <div class="hero-text">
+            <h1>PseudoPlay</h1>
+
+            <p class="project-description">
+                PseudoPlay is a mobile learning tool designed to teach programming logic through an interactive 
+                pseudocode interpreter. It supports real-time execution, block-based logic, memory visualization, 
+                and line-by-line debugging—all implemented natively in Flutter using a custom Lexer, Parser, 
+                Generator, and Execution Engine.
+            </p>
+
+            <p class="project-stack">Flutter · Dart · Lexer/Parser Engine · AST Tuples · Mobile Education</p>
+
+            <div class="hero-stores" style="margin-top:22px;">
+                <a href="https://apps.apple.com/mx/app/pseudoplay/id6755493697?l=en-GB" target="_blank" rel="noopener">
+                    <img src="img/appstore.png" alt="App Store">
+                </a>
+            </div>
+
+            <div class="project-links" style="margin-top:18px;">
+                <a href="index.html#projects" class="project-link secondary">All Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-video">
+            <a href="https://www.youtube.com/watch?v=4TcdojvfLUg" target="_blank" class="video-thumb">
+                <img src="img/pseudoplay/pseudoplay_editor_pseudocodigo.png" alt="PseudoPlay Preview">
+                <span class="play-icon">▶</span>
+                <p>Watch demo on YouTube</p>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<div class="project-content">
+
+    <div class="section-block light how-it-works">
+        <div class="how-text">
+            <h2>How It Works</h2>
+            <p>
+                PseudoPlay processes pseudocode using a complete custom-built pipeline: a Lexer divides user 
+                input into tokens, a Parser verifies syntax and constructs semantic structures, the Generator 
+                converts statements into internal tuples, and the Execution Engine simulates program behavior 
+                step-by-step with real-time output and memory updates.
+            </p>
+
+            <div class="how-points">
+                <span>Custom Lexer & Parser</span>
+                <span>Tuple-based execution engine</span>
+                <span>Line-by-line debugging</span>
+                <span>Variable memory inspection</span>
+                <span>Block-based visual mode</span>
+            </div>
+        </div>
+
+        <div class="how-card">
+            <img src="img/pseudoplay/pseudoplay_logo.png" 
+                 alt="PseudoPlay Editor" 
+                 class="rounded-card small">
+        </div>
+    </div>
+
+    <div class="flow-section">
+        <div class="flow-section-inner">
+
+            <div class="feature-heading">
+                <h3 class="feature-title">PseudoPlay App Flow</h3>
+                <p class="feature-description">
+                    From writing pseudocode to executing programs visually, each step of the learning 
+                    experience is fully interactive and optimized for education.
+                </p>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>1. Pseudocode Editor</h2>
+                    <p>
+                        Users write pseudocode directly in the built-in editor. Syntax is validated on the fly, 
+                        allowing students to experiment and learn proper structure easily.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/pseudoplay/pseudoplay_editor_pseudocodigo.png">
+                </div>
+            </div>
+
+            <div class="section-row reverse section-block gray">
+                <div class="section-text">
+                    <h2>2. Block-Based Logic</h2>
+                    <p>
+                        A visual mode allows younger learners to build logic using predefined blocks, which 
+                        internally generate valid pseudocode. Conceptually aligned with Scratch but 
+                        adapted for real pseudocode semantics.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/pseudoplay/pseudoplay_modo_bloques.png">
+                </div>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>3. Live Execution</h2>
+                    <p>
+                        Pseudocode is executed line by line using a custom interpreter. Students can visualize 
+                        outputs, follow control flow, inspect variable updates, and understand conditions 
+                        and loops through dynamic highlighting.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/pseudoplay/pseudoplay_ejecucion_pseudocodigo.png">
+                </div>
+            </div>
+
+            <div class="section-row reverse section-block gray">
+                <div class="section-text">
+                    <h2>4. Desk Checking</h2>
+                    <p>
+                        PseudoPlay includes a desk-checking module, allowing students to manually trace program 
+                        behavior. This reinforces core programming reasoning skills, such as flow understanding, 
+                        variable management, and algorithmic thinking.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/pseudoplay/pseudoplay_prueba_escritorio.png">
+                </div>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>5. Flashcards</h2>
+                    <p>
+                        A built-in flashcard system helps students reinforce concepts, memorize common structures, 
+                        and practice typical exercises found in introductory programming courses.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/pseudoplay/pseudoplay_flashcards.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-block white" style="margin-top:40px;">
+        <h2>Technical Architecture</h2>
+        <p>
+            PseudoPlay implements a full pseudocode interpreter built from scratch using a traditional 
+            language-processing pipeline. The system processes user input through the following stages:
+        </p>
+
+        <ul style="margin-top:20px;">
+            <li><strong>Lexer:</strong> Breaks pseudocode into tokens (identifiers, numbers, operators, keywords).</li>
+            <li><strong>Parser:</strong> Validates syntactic structure and builds semantic relationships.</li>
+            <li><strong>Generator:</strong> Converts statements into internal tuples (Assign, Read, Write, Compare, EndProgram, etc.).</li>
+            <li><strong>Execution Engine:</strong> Executes tuples sequentially, updating memory and producing output.</li>
+            <li><strong>Symbol Table:</strong> Stores variable names, values, and types throughout execution.</li>
+            <li><strong>Memory Model:</strong> Real-time visualization of variables and state changes.</li>
+            <li><strong>Flutter UI:</strong> Designed to be intuitive for students learning programming logic.</li>
+        </ul>
+    </div>
+
+</div>
+
+<section class="cta-section">
+    <h2>Technical Stack</h2>
+    <p>Built with Flutter and Dart, featuring a custom Lexer/Parser/Interpreter engine for executing pseudocode.</p>
+</section>
+
+<footer class="footer">
+    <p>Developed by Daniel Nuno</p>
+
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+
+        <a href="mailto:dnuno@cetys.edu.mx">
+            <img src="img/mail.webp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

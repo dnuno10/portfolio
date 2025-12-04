@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Escolar - Daniel Nuno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="img/danielnuno.jpg" class="profile-img">
+        <div class="nav-title">
+            <h3>Daniel Nuno</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">← Back to Portfolio</a></li>
+    </ul>
+</nav>
+
+<section class="project-hero">
+    <div class="hero-layout">
+        <div class="hero-text">
+            <h1>Alerta Escolar</h1>
+            <p class="project-description">
+                Real-time notification system that alerts parents when their children enter or exit school. 
+                Currently serving 2,000+ users at Secundaria Lázaro Cárdenas in Tijuana, BC.
+            </p>
+
+            <p class="project-stack">Flutter · Dart · Supabase · Firebase · PostgreSQL</p>
+
+            <div class="hero-stores">
+                <a href="https://apps.apple.com/mx/app/alerta-escolar-app/id6526502450?l=en-GB" target="_blank" rel="noopener">
+                    <img src="img/appstore.png" alt="App Store">
+                </a>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.unosoft.alertaescolar_mb&ved=2ahUKEwiJ8LKu9qKRAxVKmSYFHQsbATAQFnoECBgQAQ&usg=AOvVaw0TVFxxikkiM9-QOE3VskIL" target="_blank" rel="noopener">
+                    <img src="img/playstore.png" alt="Play Store">
+                </a>
+            </div>
+
+            <div class="project-links">
+                <a href="index.html#projects" class="project-link secondary">All Projects</a>
+            </div>
+        </div>
+        <div class="hero-video">
+            <a href="https://www.youtube.com/shorts/S_oBZpnGKcY" target="_blank" rel="noopener" class="video-thumb">
+                <img src="img/alerta-escolar/demoyt.png" alt="Watch the system in action">
+                <span class="play-icon">▶</span>
+                <p>Watch full demo on YouTube</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="project-content">
+
+    <div class="section-block light how-it-works">
+        <div class="how-text">
+            <h2>How It Works</h2>
+            <p>
+                Students scan their PVC ID credentials—printed in-house and linked to the platform via each
+                student matrícula—when entering or leaving school. Parents instantly receive a push notification
+                with the timestamp and access type.
+            </p>
+            <div class="how-points">
+                <span>QR code scanning at school entrance</span>
+                <span>Instant push notifications to parents</span>
+                <span>Complete attendance history</span>
+                <span>Schedule and announcements access</span>
+            </div>
+        </div>
+        <div class="how-card">
+            <img src="img/alerta-escolar/credencial_ej.png" alt="Student ID Card" class="rounded-card">
+        </div>
+    </div>
+
+        <div class="flow-section">
+            <div class="flow-section-inner">
+                <div class="feature-heading">
+                    <h3 class="feature-title">Alerta Escolar App Flow</h3>
+                    <p class="feature-description">
+                        A streamlined experience that guides school staff, parents, and scanners through the same
+                        platform—from administrative control to instant notifications on every check-in.
+                    </p>
+                </div>
+                <div class="section-row reverse section-block white">
+        <div class="section-text">
+            <h2>Administrative Panel</h2>
+            <p>
+                Mobile app dashboard that lets school staff manage students, track attendance,
+                configure schedules, and send communications right from their devices.
+            </p>
+            <ul>
+                <li>Student directory with filters</li>
+                <li>Real-time attendance tracking</li>
+                <li>Schedule management by group</li>
+                <li>Mass announcement system</li>
+                <li>Role-based access control</li>
+            </ul>
+        </div>
+        <div class="section-image">
+            <img src="img/alerta-escolar/vista_principal.png" alt="Admin Dashboard">
+        </div>
+    </div>
+
+        <div class="section-row section-block gray">
+        <div class="section-text">
+            <h2>Parent Mobile App</h2>
+            <p>
+                iOS and Android app providing parents with real-time visibility 
+                into their children's school attendance and activities.
+            </p>
+            <ul>
+                <li>Entry/exit notifications</li>
+                <li>Weekly class schedules</li>
+                <li>School announcements</li>
+                <li>Multiple children support</li>
+                <li>Family contact management</li>
+            </ul>
+        </div>
+        <div class="section-image small">
+            <img src="img/alerta-escolar/home_view.png" alt="Parent App">
+        </div>
+    </div>
+
+    <div class="section-row section-block white">
+        <div class="section-text">
+            <h2>QR Scanner Interface</h2>
+            <p>
+                Optimized scanning interface designed for high-volume use with professional 
+                QR readers. Provides instant feedback and triggers notifications automatically.
+            </p>
+            <ul>
+                <li>Compatible with Steren COM-5970</li>
+                <li>Live scanning feedback</li>
+                <li>Automatic notification trigger</li>
+                <li>Offline queue support</li>
+            </ul>
+        </div>
+        <div class="section-image">
+            <img src="img/alerta-escolar/escaner_qr.png" alt="QR Scanner">
+        </div>
+    </div>
+
+        <div class="section-row reverse section-block gray">
+        <div class="section-text">
+            <h2>Notification System</h2>
+            <p>
+                Firebase Cloud Messaging delivers instant notifications to parents 
+                the moment their child scans their credential at the school entrance.
+            </p>
+            <ul>
+                <li>Sub-second delivery latency</li>
+                <li>Entry and exit alerts</li>
+                <li>School-wide announcements</li>
+                <li>Emergency notifications</li>
+            </ul>
+        </div>
+        <div class="section-image">
+            <div class="dual-images">
+                <img src="img/alerta-escolar/notification_io.png" alt="Access Notification">
+                <img src="img/alerta-escolar/notif_comunicado.png" alt="Announcement">
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<section class="cta-section">
+    <h2>Technical Stack</h2>
+    <p>Built with Flutter for cross-platform development, Supabase for real-time backend, 
+    Firebase for push notifications, and PostgreSQL for data storage.</p>
+    <a href="https://alertaescolar.mx" target="_blank" class="project-link">Learn More at alertaescolar.mx</a>
+</section>
+
+<footer class="footer">
+    <p>Developed by Daniel Nuno</p>
+
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+
+        <a href="mailto:dnuno@cetys.edu.mx">
+            <img src="img/mail.webp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

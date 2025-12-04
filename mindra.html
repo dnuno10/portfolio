@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindra - Daniel Nuno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="img/danielnuno.jpg" class="profile-img">
+        <div class="nav-title">
+            <h3>Daniel Nuno</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">← Back to Portfolio</a></li>
+    </ul>
+</nav>
+
+<section class="project-hero">
+    <div class="hero-layout">
+
+        <div class="hero-text">
+            <h1>Mindra</h1>
+
+            <p class="project-description">
+                Mindra is an NLP-powered requirement analyzer capable of extracting technical needs from 
+                project descriptions and matching them with the most relevant professional profiles. The system 
+                uses TF-IDF vectorization, cosine similarity, and SVM classification to analyze job descriptions, 
+                identify core requirements, and provide structured recommendations based on semantic similarity.
+            </p>
+
+            <p class="project-stack">Python · NLP · TF-IDF · Cosine Similarity · SVM · Machine Learning</p>
+
+            <div class="project-links" style="margin-top:18px;">
+                <a href="index.html#projects" class="project-link secondary">All Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-video">
+            <img src="img/mindra/mindra_prompt.png" alt="Mindra Input" class="rounded-card" style="width:320px;">
+        </div>
+
+    </div>
+</section>
+
+<div class="project-content">
+
+    <div class="section-block light how-it-works">
+        <div class="how-text">
+            <h2>How It Works</h2>
+            <p>
+                Mindra processes natural-language job descriptions through multiple NLP stages. First, text is 
+                normalized and stemmed. Then, TF-IDF converts each description into a numerical vector. 
+                Using cosine similarity, the system identifies the 100 most relevant profiles from a dataset. 
+                Finally, an SVM classifier assigns categories to each recommended profile, enabling structured 
+                talent matching. 
+                This workflow is based on the theoretical framework described in the project documentation. 
+            </p>
+            <div class="how-points">
+                <span>TF-IDF vectorization</span>
+                <span>Cosine similarity scoring</span>
+                <span>SVM professional classification</span>
+                <span>Semantic requirement extraction</span>
+                <span>Machine learning recommendation engine</span>
+            </div>
+        </div>
+
+        <div class="how-card">
+            <img src="img/mindra/mindra_works.png" 
+                 alt="Mindra Prompt Input" 
+                 class="rounded-card">
+        </div>
+    </div>
+
+    <div class="flow-section">
+        <div class="flow-section-inner">
+
+            <div class="feature-heading">
+                <h3 class="feature-title">Mindra App Flow</h3>
+                <p class="feature-description">
+                    Users input a detailed job or project description. Mindra preprocesses the text, evaluates 
+                    similarity scores, and returns structured predictions containing matching profiles and their 
+                    associated categories.
+                </p>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>1. Input Prompt</h2>
+                    <p>
+                        The user enters a complete project or job description. This serves as the base for 
+                        requirement extraction and NLP processing.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/mindra/mindra_prompt.png" alt="Mindra Input">
+                </div>
+            </div>
+
+            <div class="section-row reverse section-block gray">
+                <div class="section-text">
+                    <h2>2. Model Prediction</h2>
+                    <p>
+                        Mindra returns a list of recommended professional profiles, ranked by cosine similarity 
+                        and categorized through SVM classification. This output includes structured areas like 
+                        Marketing, ICT, Design, and more.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/mindra/mindra_result.png" alt="Mindra Result">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-block white" style="margin-top:40px;">
+        <h2>Technical Analysis</h2>
+        <p>
+            To solve the real-world problem described below, Mindra uses TF-IDF, cosine similarity, and SVM 
+            classification as its core machine-learning components.
+        </p>
+
+        <p style="margin-top:18px; font-size:15px; color:#666;">
+            “A digital marketing company, Innovate Media, is struggling to efficiently manage ad campaigns across 
+            platforms like Google Ads, Facebook Ads, and Instagram Ads. Their current process of manually 
+            analyzing performance data is time-consuming and prone to errors, leading to inconsistent reports. 
+            They need an automated solution that can integrate with advertising platforms, collect and analyze 
+            campaign data in real time, and generate unified reports based on KPIs like ROI, CTR, and cost per acquisition.”
+        </p>
+
+        <h3 style="margin-top:30px;">TF-IDF + Cosine Similarity</h3>
+        <p>
+            TF-IDF converts text into weighted vectors by combining term frequency (TF) and inverse document 
+            frequency (IDF). This highlights rare but informative keywords in the job description.
+            Cosine similarity then measures the angle between vectors, allowing the system to compare the input 
+            description with thousands of professional profiles and identify the closest semantic matches.
+        </p>
+        <div class="how-card">
+            <img src="img/mindra/tf-idf-cosine.png" 
+                 alt="TF-IDF and Cosine Similarity Visualization"
+                 class="rounded-card">
+        </div>
+
+        <h3 style="margin-top:40px;">Support Vector Machine (SVM)</h3>
+        <p>
+            Once the top 100 similar profiles are identified, Mindra uses a Support Vector Machine classifier 
+            to categorize each profile into fields such as Marketing, ICT, Business, and more. 
+            SVM finds the optimal hyperplane that maximizes the separation margin between categories, ensuring 
+            robust and accurate classification across professional domains.
+        </p>
+        <div class="how-card">
+            <img src="img/mindra/svm.png" 
+                 alt="SVM Classification Diagram" 
+                 class="rounded-card">
+        </div>
+    </div>
+
+</div>
+
+<section class="cta-section">
+    <h2>Technical Stack</h2>
+    <p>Built with Python, TF-IDF vectorization, cosine similarity scoring, and SVM classification for professional recommendation.</p>
+</section>
+
+<footer class="footer">
+    <p>Developed by Daniel Nuno</p>
+
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+
+        <a href="mailto:dnuno@cetys.edu.mx">
+            <img src="img/mail.webp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

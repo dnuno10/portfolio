@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Nuno – Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="img/danielnuno.jpg" class="profile-img">
+        <div class="nav-title">
+            <h3>Daniel Nuno</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+
+        <li class="dropdown">
+            <a>Projects ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="alerta-escolar.html">Alerta Escolar</a></li>
+                <li><a href="flybyte.html">FlyByte</a></li>
+                <li><a href="clicknote.html">Click Note</a></li>
+                <li><a href="pseudoplay.html">PseudoPlay</a></li>
+                <li><a href="mindra.html">Mindra</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero fade-in">
+    <a href="https://drive.google.com/drive/folders/1sAkH8rJSmfm5ajDC0bUriQOdcvovl2Ev" target="_blank" rel="noopener" class="download-btn">
+        <span class="icon-sheet" aria-hidden="true"></span>
+        Download CV
+    </a>
+    <h2 class="hero-subtitle">Software Developer</h2>
+    <h1 class="hero-title">Daniel Nuno</h1>
+    <p class="hero-desc">Hybrid Software Development</p>
+
+    <div class="tech-icons">
+        <img src="img/flutter.png">
+        <img src="img/dart.png">
+        <img src="img/supabase.webp">
+    </div>
+</section>
+
+<section id="projects" class="projects">
+
+    <h4 class="section-subtitle fade-up">Projects</h4>
+    <h2 class="section-title fade-up">Recent Works</h2>
+
+    <div class="project-card fade-up">
+        <div class="project-text">
+            <span class="dot blue"></span>
+            <h3>Alerta Escolar</h3>
+            <p>
+                Alerta Escolar is a mobile system that sends real-time notifications when children enter and exit
+                the school. It includes an admin app with a scanner system, and a parent app on the App Store and Play Store.
+                Teachers can send announcements, schedules, and parents can view student details, access history, and more.
+            </p>
+
+            <p class="stack">
+                Flutter · Dart · Supabase · Firebase · Google Cloud · PostgreSQL · Ruby
+            </p>
+
+            <div class="store-buttons">
+                <div class="store-images">
+                    <a href="https://apps.apple.com/mx/app/alerta-escolar-app/id6526502450?l=en-GB" target="_blank" rel="noopener">
+                        <img src="img/appstore.png" alt="Alerta Escolar App Store">
+                    </a>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://play.google.com/store/apps/details%3Fid%3Dcom.unosoft.alertaescolar_mb&ved=2ahUKEwiJ8LKu9qKRAxVKmSYFHQsbATAQFnoECBgQAQ&usg=AOvVaw0TVFxxikkiM9-QOE3VskIL" target="_blank" rel="noopener">
+                        <img src="img/playstore.png" alt="Alerta Escolar Play Store">
+                    </a>
+                </div>
+                <a href="alerta-escolar.html" class="view-btn">View Project</a>
+            </div>
+        </div>
+
+        <img src="img/alertaescolar.png" class="project-img-large">
+    </div>
+
+    <div class="project-card reverse fade-up">
+        <div class="project-text">
+            <span class="dot purple"></span>
+            <h3>FlyByte</h3>
+            <p>
+                FlyByte is a web application that calculates the optimal flight route among all airports in Mexico
+                using a 52×52 multigraph and a modified Dijkstra algorithm. It also includes a fully modeled 3D airplane
+                with seat selection.
+            </p>
+
+            <p class="stack">Flutter · Dart · JavaScript · Blender</p>
+            <p class="local">Local Software (Outdated)</p>
+            <a href="flybyte.html" class="view-btn">View Project</a>
+        </div>
+
+        <img src="img/flybyte.png" class="project-img-large">
+    </div>
+
+    <div class="project-card fade-up">
+        <div class="project-text">
+            <span class="dot green"></span>
+            <h3>Click Note</h3>
+            <p>
+                Click Note integrates a mobile app with a microservice capable of extracting handwritten text through
+                a local OCR model executed via EC2 reverse proxy. The model processes images and returns editable text.
+            </p>
+
+            <p class="stack">Flutter · Dart · Python · EC2 · Supabase</p>
+            <p class="local">Local Software (Outdated)</p>
+
+            <a href="clicknote.html" class="view-btn">View Project</a>
+        </div>
+
+        <img src="img/clicknote.png" class="project-img-large">
+    </div>
+
+    <div class="project-card reverse fade-up">
+        <div class="project-text">
+            <span class="dot yellow"></span>
+            <h3>PseudoPlay</h3>
+            <p>
+                PseudoPlay is an educational mobile app that teaches programming fundamentals through pseudocode
+                interpretation. It uses lexers, parsers, symbol tables and visual execution traces to help users learn
+                programming concepts step-by-step.
+            </p>
+
+            <p class="stack">Flutter · Dart</p>
+
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/mx/app/pseudoplay/id6755493697?l=en-GB" target="_blank" rel="noopener">
+                    <img src="img/appstore.png" alt="PseudoPlay App Store">
+                </a>
+                <a href="pseudoplay.html" class="view-btn">View Project</a>
+            </div>
+        </div>
+
+        <img src="img/pseudoplay.png" class="project-img-large">
+    </div>
+
+    <div class="project-card fade-up">
+        <div class="project-text">
+            <span class="dot teal"></span>
+            <h3>Mindra</h3>
+            <p>
+                Mindra is an NLP-based job-profile recommender that analyzes descriptions using TF-IDF, cosine similarity
+                and SVM classification to find the top 100 matching profiles and categorize them for fast recruitment.
+            </p>
+
+            <p class="stack">Flutter · Python · Dart</p>
+            <p class="local">Local Software (Outdated)</p>
+            <a href="mindra.html" class="view-btn">View Project</a>
+        </div>
+
+        <img src="img/mindra.png" class="project-img-large">
+    </div>
+
+</section>
+
+<section id="about" class="about fade-in">
+    <h4 class="section-subtitle">About me</h4>
+    <h2 class="section-title">Daniel Nuno</h2>
+
+    <img src="img/profile.jpg" class="about-img">
+
+    <p class="about-text">
+        I am 21 years old and currently studying my 8th semester of Computer Science Engineering at
+        CETYS Universidad Tijuana. I am passionate about solving real-world problems using mobile development,
+        teamwork and clean engineering practices.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h2 class="section-title fade-up">Skills</h2>
+
+    <div class="skills-grid fade-up">
+        <div class="skill">Dart</div>
+        <div class="skill">Flutter</div>
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">Supabase</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Deployment (App Store)</div>
+        <div class="skill">Deployment (Play Store)</div>
+        <div class="skill">Agile</div>
+        <div class="skill">Web Development</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Team Work</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Developed by Daniel Nuno</p>
+
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+
+        <a href="mailto:dnuno@cetys.edu.mx">
+            <img src="img/mail.webp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

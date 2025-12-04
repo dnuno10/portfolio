@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickNote - Daniel Nuno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="img/danielnuno.jpg" class="profile-img">
+        <div class="nav-title">
+            <h3>Daniel Nuno</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">← Back to Portfolio</a></li>
+    </ul>
+</nav>
+
+<section class="project-hero">
+    <div class="hero-layout">
+
+        <div class="hero-text">
+            <h1>ClickNote – OCR Microservice</h1>
+
+            <p class="project-description">
+                ClickNote is a cloud-based OCR platform powered by the TrOCR transformer model, 
+                implemented as a secure microservice using FastAPI, a hybrid cloud–local architecture, 
+                and HMAC-signed authentication. Clients upload handwritten images and receive 
+                highly accurate text predictions, with full editing capabilities inside the mobile app.
+            </p>
+
+            <p class="project-stack">FastAPI · TrOCR · Supabase · HMAC Security · Flutter</p>
+
+            <p style="color:#d9534f; font-weight:600;">Local Software (Outdated)</p>
+
+            <div class="project-links">
+                <a href="index.html#projects" class="project-link secondary">All Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-video">
+            <a href="https://youtube.com/shorts/r4P0DDKg5WA" target="_blank" class="video-thumb">
+                <img src="img/clicknote/clicknote_placeholder.png" alt="ClickNote OCR Demo">
+                <span class="play-icon">▶</span>
+                <p>Watch demo on YouTube</p>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="project-content">
+
+    <div class="section-block light how-it-works">
+        <div class="how-text">
+            <h2>How It Works</h2>
+            <p>
+                ClickNote integrates a complete OCR pipeline combining cloud networking, a transformer-based 
+                TrOCR model, and a secure authentication system. Images are uploaded by the client, validated, 
+                signed with HMAC headers, forwarded through a reverse SSH tunnel, processed locally, and returned 
+                as structured JSON.
+            </p>
+
+            <div class="how-points">
+                <span>Secure HMAC authentication</span>
+                <span>FastAPI cloud endpoint</span>
+                <span>Reverse SSH tunnel</span>
+                <span>Local TrOCR inference</span>
+                <span>JSON prediction output</span>
+            </div>
+        </div>
+
+        <div class="how-card">
+            <img src="img/clicknote/clicknote_intro.png" 
+                 alt="Technical Diagram ClickNote" 
+                 class="rounded-card">
+        </div>
+    </div>
+
+    <div class="flow-section">
+        <div class="flow-section-inner">
+
+            <div class="feature-heading">
+                <h3 class="feature-title">ClickNote App Flow</h3>
+                <p class="feature-description">
+                    The ClickNote workflow moves through image upload, secure API transmission, model inference, 
+                    and editable text display inside the Flutter mobile app.
+                </p>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>1. Client Uploads an Image</h2>
+                    <p>
+                        The user selects a handwritten image from their device. The app compresses the image 
+                        and prepares secure headers (X-API-KEY, X-TIMESTAMP, X-SIGNATURE) before sending the request.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/clicknote/clicknote_first_interaction.png">
+                </div>
+            </div>
+
+            <div class="section-row reverse section-block gray">
+                <div class="section-text">
+                    <h2>2. Model Execution</h2>
+                    <p>
+                        The API forwards the image through an SSH tunnel to the local machine running the 
+                        TrOCR model. The model generates a prediction and returns clean text.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/clicknote/clicknote_result.png">
+                </div>
+            </div>
+
+            <div class="section-row section-block white">
+                <div class="section-text">
+                    <h2>3. Fully Editable Result</h2>
+                    <p>
+                        The predicted text is rendered inside an editable text box. Users can modify, 
+                        correct, extend, save, or export the processed content.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/clicknote/clicknote_editing.png">
+                </div>
+            </div>
+
+            <div class="section-row reverse section-block gray">
+                <div class="section-text">
+                    <h2>4. Handwriting Recognition</h2>
+                    <p>
+                        ClickNote specializes in handwritten OCR thanks to Microsoft's TrOCR model, 
+                        which merges Vision Transformer (ViT) embeddings with a RoBERTa-based decoder.
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="img/clicknote/handwriting.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section-block white" style="margin-top:40px;">
+        <h2>Technical Architecture</h2>
+        <p>
+            ClickNote is built on a hybrid architecture that decouples public API access from 
+            compute-heavy OCR inference. The cloud-hosted FastAPI service handles authentication, 
+            routing, and file management, while the TrOCR model runs locally through a secure 
+            reverse SSH tunnel. This design maximizes security and performance.
+        </p>
+
+        <ul style="margin-top:20px;">
+            <li><strong>FastAPI (Cloud):</strong> Receives requests, validates headers, manages FTP uploads.</li>
+            <li><strong>Supabase:</strong> Stores API keys, secrets, and usage counters for clients.</li>
+            <li><strong>HMAC-SHA256:</strong> Custom header-based security system using X-API-KEY, X-TIMESTAMP, X-SIGNATURE.</li>
+            <li><strong>NGINX Reverse Proxy:</strong> HTTPS termination and routing.</li>
+            <li><strong>Reverse SSH Tunnel:</strong> Forwards cloud requests to the local inference server.</li>
+            <li><strong>Local OCR Engine:</strong> Runs TrOCR for text extraction.</li>
+            <li><strong>Flutter Mobile App:</strong> Sends requests, receives JSON, displays and edits text.</li>
+        </ul>
+    </div>
+
+</div>
+
+<section class="cta-section">
+    <h2>Technical Stack</h2>
+    <p>FastAPI backend, TrOCR model (Transformer OCR), Secure HMAC authentication, Supabase backend, Flutter mobile client.</p>
+</section>
+
+<footer class="footer">
+    <p>Developed by Daniel Nuno</p>
+
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+
+        <a href="mailto:dnuno@cetys.edu.mx">
+            <img src="img/mail.webp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
