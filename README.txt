@@ -1,9 +1,8 @@
-Daniel Nuño Portfolio Website
+Daniel Nuno Portfolio Website
 
 Files included:
 - index.html
 - taploop.html
-- cardmax.html
 - alerta-escolar.html
 - styles.css
 - img/ folder for your project images
@@ -19,26 +18,12 @@ Home:
 - img/danielnuno.jpg
 - img/profile.jpg
 - img/taploop-cover.jpg
-- img/cardmax-cover.jpg
 - img/alerta-cover.jpg
 - img/flutter.png
 - img/python.png
 - img/aws.png
 - img/linkedin.png
 - img/mail.webp
-
-CardMax timeline:
-- img/cardmax-01-origin.jpg
-- img/cardmax-02-printer.jpg
-- img/cardmax-03-brand.jpg
-- img/cardmax-04-first-client.jpg
-- img/cardmax-05-growth.jpg
-- img/cardmax-06-production.jpg
-- img/cardmax-07-accounting.jpg
-- img/cardmax-08-teamwork.jpg
-- img/cardmax-09-mexico.jpg
-- img/cardmax-10-lessons.jpg
-- img/cardmax-11-next-stage.jpg
 
 TapLoop timeline:
 - img/taploop-01-origin.jpg
