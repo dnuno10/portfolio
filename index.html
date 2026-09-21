@@ -1,134 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Nuno, Software Engineer and Computer Science graduate building AI-powered web solutions, NFC platforms, and QR-based mobile systems.">
-    <title>Daniel Nuno – Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpeg" href="img/profile.jpg">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="icon" type="image/jpeg" href="img/profile.jpg"><link rel="stylesheet" href="styles.css">
+<meta name="description" content="Daniel Nuno, Product Manager focused on technical products and implementation: NFC platforms, AI-enabled workflows and mobile apps.">
+<title>Daniel Nuno – Product Manager</title>
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-left">
-        <img src="img/profile.jpg" class="profile-img" alt="Daniel Nuno">
-        <div class="nav-title">
-            <h3>Daniel Nuno</h3>
-            <p>Software Engineer</p>
+<nav class="navbar"><div class="wrap"><a class="brand" href="index.html"><img src="img/profile.jpg" alt="Daniel Nuno"><strong>Daniel Nuno</strong></a><ul class="nav-links"><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="hi">Hi, I'm Daniel 👋</p>
+      <h1>Product Manager who turns ideas into <span>products people use</span></h1>
+      <p class="lead">I own product requirements, implementation, deployment and iteration across digital platforms, NFC products and mobile apps, combining product strategy with technical execution (AWS, REST APIs, CI/CD, analytics).</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my product work</a>
+        <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1sAkH8rJSmfm5ajDC0bUriQOdcvovl2Ev" target="_blank" rel="noopener">Download CV</a>
+      </div>
+      <div class="tags"><span class="tag blue">Product Strategy</span><span class="tag purple">Implementation</span><span class="tag mint">Analytics</span><span class="tag sky">Stakeholder Mgmt</span></div>
+    </div>
+    <div class="hero-art"><img src="assets/me.png" alt="Daniel Nuno"></div>
+  </div>
+  <div class="wrap">
+    <div class="stats" style="width:100%">
+      <div class="stat"><strong>$50K</strong><span>revenue from $0 investment in 6 months</span></div>
+      <div class="stat"><strong>5,900+</strong><span>active users served</span></div>
+      <div class="stat"><strong>4,000+</strong><span>digital business cards delivered</span></div>
+      <div class="stat"><strong>20+</strong><span>organizations onboarded</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <span class="eyebrow">Product work</span>
+    <h2 class="section-title">Products I've led from requirements to launch</h2>
+    <div class="cards">
+      <article class="pcard tl">
+        <div>
+          <span class="tag blue">Product Lead · 2025 – Present</span>
+          <h3>TapLoop</h3>
+          <p class="role">Bootstrapped NFC platform · $0 → $50K in 6 months</p>
+          <ul>
+            <li>Own strategy and execution for digital business cards, analytics, lead generation and contact management.</li>
+            <li>4,000+ cards delivered to 20+ organizations; 4,000+ leads captured.</li>
+          </ul>
+          <a class="btn btn-primary" href="taploop.html">Read the case study</a>
         </div>
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li class="dropdown">
-            <a>Projects ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="taploop.html">TapLoop</a></li>
-                <li><a href="alerta-escolar.html">Alerta Escolar</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html#about">About me</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-    </ul>
-</nav>
-
-<section id="home" class="hero fade-in">
-    <a href="https://drive.google.com/drive/folders/1sAkH8rJSmfm5ajDC0bUriQOdcvovl2Ev" target="_blank" rel="noopener" class="download-btn">
-        <span class="icon-sheet" aria-hidden="true"></span>
-        Download CV
-    </a>
-    <img src="img/profile.jpg" class="hero-profile-img" alt="Professional portrait of Daniel Nuno">
-    <h2 class="hero-subtitle">Software Engineer</h2>
-    <h1 class="hero-title">Daniel Nuno</h1>
-    <p class="hero-desc">
-        Computer Science graduate with experience building end-to-end software products that solve real-world business problems, from AI-powered web solutions and CI/CD deployments to NFC-enabled platforms and QR-based mobile systems.
-    </p>
-    <div class="hero-metrics">
-        <div class="metric-pill">2,800+ active users supported</div>
-        <div class="metric-pill">4,000+ products deployed</div>
-        <div class="metric-pill">3.9 / 4.0 GPA</div>
-    </div>
-    <div class="tech-icons" aria-label="Project logos">
-        <img src="img/taploop-logo.jpg" alt="TapLoop logo">
-        <img src="img/alerta-logo.jpg" alt="Alerta Escolar logo">
-    </div>
-</section>
-
-<section id="projects" class="projects">
-    <h4 class="section-subtitle fade-up">Projects</h4>
-    <h2 class="section-title fade-up">Software Projects with Real-World Impact</h2>
-
-    <div class="project-card fade-up">
-        <div class="project-text">
-            <img src="img/taploop-logo.jpg" class="project-logo" alt="TapLoop logo">
-            <span class="dot blue"></span>
-            <h3>TapLoop</h3>
-            <p>
-                An NFC-powered digital networking platform that evolved from simple static profile pages into a hardware + software solution with digital business cards, analytics, lead capture, and corporate onboarding.
-            </p>
-            <p class="stack">NFC · Digital Business Cards · Web Platform · Analytics · Lead Capture · Deployment</p>
-            <div class="project-actions">
-                <a href="taploop.html" class="view-btn">View Project</a>
-                <a href="https://taploop.com.mx" target="_blank" rel="noopener" class="secondary-btn">Visit Website</a>
-            </div>
+        <img class="shot" src="assets/plataforma-analitica.webp" alt="TapLoop analytics dashboard">
+      </article>
+      <article class="pcard ae">
+        <div>
+          <span class="tag purple">Product Implementation Lead · 2024 – 2025</span>
+          <h3>Alerta Escolar</h3>
+          <p class="role">Low-cost QR student access control · 2,000+ users</p>
+          <ul>
+            <li>Owned requirements and led institution-wide rollout, testing and onboarding.</li>
+            <li>Launched on the App Store and Google Play for under-resourced schools.</li>
+          </ul>
+          <a class="btn btn-purple" href="alerta-escolar.html">Read the case study</a>
         </div>
-        <img src="img/taploop-cover.jpg" class="project-img-large" alt="TapLoop project">
+        <img class="shot" src="assets/alerta-escolar.png" alt="Alerta Escolar mobile app screens">
+      </article>
     </div>
-
-    <div class="project-card reverse fade-up">
-        <div class="project-text">
-            <img src="img/alerta-logo.jpg" class="project-logo" alt="Alerta Escolar logo">
-            <span class="dot green"></span>
-            <h3>Alerta Escolar</h3>
-            <p>
-                A QR-based student access control platform built for a public school that needed an affordable solution to notify families when students entered and exited campus.
-            </p>
-            <p class="stack">Flutter · Supabase · QR Access Control · App Store · Google Play · Social Impact</p>
-            <div class="project-actions">
-                <a href="alerta-escolar.html" class="view-btn">View Project</a>
-            </div>
-        </div>
-        <img src="img/alerta-cover.jpg" class="project-img-large" alt="Alerta Escolar project">
-    </div>
+  </div>
 </section>
 
-<section id="about" class="about fade-in">
-    <h4 class="section-subtitle">About me</h4>
-    <h2 class="section-title">Daniel Nuno</h2>
-    <img src="img/profile.jpg" class="about-img" alt="Daniel Nuno profile">
-    <p class="about-text">
-        I am a Computer Science graduate from CETYS University with a 3.9 GPA and experience building software products from idea to deployment. I have contributed to AI-powered RAG solutions, AWS development environments, microservice deployments, NFC-enabled digital platforms, and QR-based mobile systems published on the App Store and Google Play. My work has supported more than 2,800 active users and helped deploy over 4,000 products to businesses and professionals.
-    </p>
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Experience</span>
+    <h2 class="section-title">Where I've built and shipped</h2>
+    <div class="tl-list">
+      <div class="job current">
+        <header><div><h3>Product Lead</h3><div class="where">TapLoop · Remote</div></div><span class="when">Spring 2025 – Present</span></header>
+        <ul>
+          <li>Drove the launch of a bootstrapped NFC platform from $0 investment to $50K USD in revenue within 6 months, delivering 4,000+ digital business cards for 20+ organizations and growing the contact database to 4,000+ leads.</li>
+          <li>Own product strategy and execution for an NFC-powered platform combining digital business cards, analytics, lead generation and contact management.</li>
+          <li>Translate customer and business needs into requirements, priorities, onboarding workflows and improvements, working closely with customers.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <header><div><h3>Product Implementation Lead</h3><div class="where">Alerta Escolar · Mexico</div></div><span class="when">Summer 2024 – Present</span></header>
+        <ul>
+          <li>Built and launched a low-cost, QR-based student access-control platform on the App Store and Google Play.</li>
+          <li>Owned requirements and led implementation for 2,000+ users: development priorities, testing, deployment and onboarding.</li>
+          <li>Partnered with stakeholders to resolve adoption issues and refine workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="skills" class="skills">
-    <h2 class="section-title fade-up">Skills</h2>
-    <div class="skills-grid fade-up">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Git</div>
-        <div class="skill">CI/CD</div>
-        <div class="skill">Flutter</div>
-        <div class="skill">Dart</div>
-        <div class="skill">REST APIs</div>
-        <div class="skill">AWS</div>
-        <div class="skill">Agile</div>
-        <div class="skill">UI/UX Fundamentals</div>
-        <div class="skill">Teamwork</div>
-        <div class="skill">Communication</div>
-        <div class="skill">Critical Thinking</div>
-        <div class="skill">Leadership</div>
-        <div class="skill">Spanish Native</div>
-        <div class="skill">Advanced English</div>
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">Skills</span>
+    <h2 class="section-title">Product thinking + technical fluency</h2>
+    <div class="skill-grid">
+      <div class="skill-box"><h4>Product &amp; Delivery</h4><div class="tags"><span class="tag">Product Strategy</span><span class="tag">Product Requirements</span><span class="tag">Feature Prioritization</span><span class="tag">Product Discovery</span><span class="tag">Stakeholder Management</span><span class="tag">User Onboarding</span><span class="tag">Product Analytics</span><span class="tag">Agile</span></div></div>
+      <div class="skill-box"><h4>Technical</h4><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">AWS</span><span class="tag">Git</span><span class="tag">CI/CD</span><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">REST APIs</span><span class="tag">RAG</span><span class="tag">Microservices</span></div></div>
+      <div class="skill-box"><h4>Professional</h4><div class="tags"><span class="tag">Stakeholder Communication</span><span class="tag">Cross-Functional Collaboration</span><span class="tag">Leadership</span><span class="tag">Critical Thinking</span><span class="tag">Spanish</span><span class="tag">English</span></div></div>
     </div>
+    <div class="two">
+      <div class="soft-box"><h4>Education</h4><p><strong>CETYS University</strong>, Tijuana, B.C.<br>B.S. in Computer Science · GPA 3.9/4.0 · 2026</p></div>
+      <div class="soft-box alt"><h4>Achievements &amp; Certifications</h4><p>🏆 3rd Place, Enactus National Hackathon · Grupo Bimbo<br>📜 Mendix Rapid Developer Certification · Summer 2024</p></div>
+    </div>
+  </div>
 </section>
-
-<footer class="footer">
-    <p>Developed by Daniel Nuno</p>
-    <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/danielnunomx/" target="_blank" rel="noopener"><img src="img/linkedin.png" alt="LinkedIn"></a>
-        <a href="mailto:dnuno@cetys.edu.mx"><img src="img/email.png" alt="Email"></a>
-    </div>
-</footer>
+<footer class="footer" id="contact"><div class="wrap"><div class="links"><a href="mailto:danielnunopm@gmail.com">danielnunopm@gmail.com</a><a href="https://www.linkedin.com/in/dnunopm" target="_blank" rel="noopener">LinkedIn</a><a href="tel:+16192187130">+1 619 218 7130</a></div><p>Daniel Nuno · Product Manager · U.S. Citizen</p></div></footer>
 </body>
 </html>

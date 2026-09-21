@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerta Escolar – Daniel Nuno Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="icon" type="image/jpeg" href="img/profile.jpg"><link rel="stylesheet" href="styles.css">
+<title>Alerta Escolar – Daniel Nuno, Product Manager</title>
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-left"><img src="img/profile.jpg" class="profile-img" alt="Daniel Nuno"><div class="nav-title"><h3>Daniel Nuno</h3><p>Software Engineer</p></div></div>
-    <ul class="nav-links"><li><a href="index.html">Home</a></li><li class="dropdown"><a>Projects ▾</a><ul class="dropdown-menu"><li><a href="taploop.html">TapLoop</a></li><li><a href="alerta-escolar.html">Alerta Escolar</a></li></ul></li><li><a href="index.html#about">About me</a></li><li><a href="index.html#skills">Skills</a></li></ul>
-</nav>
+<nav class="navbar"><div class="wrap"><a class="brand" href="index.html"><img src="img/profile.jpg" alt="Daniel Nuno"><strong>Daniel Nuno</strong></a><ul class="nav-links"><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#contact">Contact</a></li></ul></div></nav>
 
-<section class="project-hero fade-in">
-    <img src="img/alerta-logo.jpg" class="project-hero-logo" alt="Alerta Escolar logo">
-    <h1>A Low-Cost Access Control System Built for a Public School</h1>
-    <p>Alerta Escolar started when I heard that a school needed an affordable way to control student access and notify parents. The school had limited resources, so I decided to step in and build a solution that could create a real impact for students, families, and administrators.</p>
-    <div class="story-metrics">
-        <div class="story-metric"><strong>2,000+</strong><span>users reached</span></div>
-        <div class="story-metric"><strong>1,200+</strong><span>students impacted</span></div>
-        <div class="story-metric"><strong>iOS + Android</strong><span>published mobile apps</span></div>
+<header class="phero ae">
+  <div class="wrap">
+    <div>
+      <a class="back" href="index.html">← Back to portfolio</a><br>
+      <img class="logo" src="img/alerta-logo.jpg" alt="Alerta Escolar logo">
+      <span class="eyebrow purple">Product Implementation Lead · Summer 2024 – Present</span>
+      <h1>A dignified, low-cost school access system for 2,000+ users</h1>
+      <p class="lead">Alerta Escolar is a QR-based student access-control platform that gives under-resourced schools and families a simple school management system, without the expense of complex enterprise solutions.</p>
+      <img class="store" src="assets/appstore-googleplay.png" alt="Available on the App Store and Google Play">
     </div>
+    <img src="assets/alerta-escolar.png" alt="Alerta Escolar app screens">
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="stats" style="grid-template-columns:repeat(3,1fr);margin-top:0">
+      <div class="stat"><strong style="color:var(--purple)">2,000+</strong><span>users onboarded institution-wide</span></div>
+      <div class="stat"><strong style="color:var(--mint)">2</strong><span>stores: App Store &amp; Google Play</span></div>
+      <div class="stat"><strong style="color:var(--blue)">QR</strong><span>low-cost access control</span></div>
+    </div>
+  </div>
 </section>
 
-<section class="timeline">
-    <div class="timeline-item">
-        <div class="timeline-text"><span class="eyebrow">Problem</span><h2>Identifying the problem</h2><p>Alerta Escolar started by understanding a clear operational problem: a school needed a simple and affordable way to know when students entered and left campus. That initial diagnosis shaped the entire project and its focus on practical impact over unnecessary complexity.</p></div>
-        <div class="timeline-image"><img src="img/alerta-01-school.jpg" alt="Public school access control need"></div>
+<section>
+  <div class="wrap">
+    <span class="eyebrow purple">My role</span>
+    <h2 class="section-title">What I owned</h2>
+    <div class="grid3">
+      <div class="card p"><h3>Product requirements</h3><p>Defined what the platform needed to do for schools and families, keeping it affordable and simple.</p></div>
+      <div class="card p"><h3>Institution-wide rollout</h3><p>Led implementation across the institution, coordinating development priorities, testing, deployment and user onboarding.</p></div>
+      <div class="card p"><h3>Stakeholder partnership</h3><p>Worked with stakeholders throughout rollout to resolve adoption issues, refine workflows and support a successful implementation.</p></div>
     </div>
-    <div class="timeline-item reverse">
-        <div class="timeline-text"><span class="eyebrow">Planning</span><h2>Designing the solution</h2><p>Before writing code, I mapped the workflow, requirements, and system behavior needed for a school environment. The solution had to be easy for administrators to operate, intuitive for students, and reliable enough for families to trust the notifications they would receive.</p></div>
-        <div class="timeline-image"><img src="img/alerta-02-planning.png" alt="Planning Alerta Escolar solution"></div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-text"><span class="eyebrow">Development</span><h2>Building the platform</h2><p>I built the platform around mobile access, QR-based validation, and a workflow that connected students, parents, and school staff. This was where product thinking and engineering execution came together under real constraints.</p></div>
-        <div class="timeline-image"><img src="img/alerta-03-development.jpg" alt="Building Alerta Escolar platform"></div>
-    </div>
-    <div class="timeline-item reverse">
-        <div class="timeline-text"><span class="eyebrow">Testing</span><h2>Testing with real users</h2><p>Validation happened in a real school context, which made testing much more meaningful than a simulated environment. Using actual QR credentials and real workflows helped uncover practical issues early and improved usability before full deployment.</p></div>
-        <div class="timeline-image"><img src="img/alerta-04-testing.jpg" alt="Testing Alerta Escolar with QR credentials"></div>
-    </div>
-    <div class="timeline-item">
-        <div class="timeline-text"><span class="eyebrow">Deployment</span><h2>School-wide deployment</h2><p>Once the solution was stable, it was deployed at scale across the school. That phase required coordination, support, and adaptation to how the institution actually operated day to day, turning the project from software into a working service.</p></div>
-        <div class="timeline-image"><img src="img/alerta-05-deployment.jpg" alt="School-wide Alerta Escolar deployment"></div>
-    </div>
-    <div class="timeline-item reverse">
-        <div class="timeline-text"><span class="eyebrow">Impact</span><h2>Impacting 1,200+ students and families</h2><p>The final result was a platform that served more than 1,200 students and reached over 2,000 total users including families and staff. It demonstrated how software can create measurable social impact when it is designed around a concrete and urgent need.</p></div>
-        <div class="timeline-image"><img src="img/alerta-06-impact.png" alt="Students and families using Alerta Escolar"></div>
-    </div>
+  </div>
 </section>
 
-<section class="project-links"><a href="index.html" class="secondary-btn">Back to Home</a><a href="taploop.html" class="view-btn">Next Project: TapLoop</a></section>
-<footer class="footer"><p>Developed by Daniel Nuno</p></footer>
+<div class="nextlinks" style="padding-top:50px"><a class="btn btn-ghost" href="index.html">Back to home</a><a class="btn btn-primary" href="taploop.html">See TapLoop →</a></div>
+<footer class="footer" id="contact"><div class="wrap"><div class="links"><a href="mailto:danielnunopm@gmail.com">danielnunopm@gmail.com</a><a href="https://www.linkedin.com/in/dnunopm" target="_blank" rel="noopener">LinkedIn</a><a href="tel:+16192187130">+1 619 218 7130</a></div><p>Daniel Nuno · Product Manager · U.S. Citizen</p></div></footer>
 </body>
 </html>
